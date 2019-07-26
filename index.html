@@ -13,7 +13,7 @@
     <div class="container">
       <div class="landing-page text-white text-center">
         <br /><br />
-        <img src="img/logo.png" alt="logo image">
+        <img src="img/logo.png" alt="logo image" class="logo">
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <h1><strong>WELCOME</strong></h1>
         <br /><br />
@@ -35,12 +35,52 @@
         </p>
       </div>
     </div>
-    <!-- <div class="container">
-      <div class="gallery text-center">
-        <br /><br /><br /><br />
-        <h2>GALLERY</h2>
+    <div class="container-fluid text-center">
+      <h2>GALLERY</h2>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="img/cheese-pizza.jpg" style="width:100%" height="400px" >
+          <div class="caption">Plain Cheese Pizza</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="img/pepperoni-pizza.jpg" style="width:100%" height="400px" >
+          <div class="caption">Pepperoni Pizza</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="img/chicken-pizza.jpg" style="width:100%" height="400px" >
+          <div class="caption">Chicken Pizza</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="img/vegeterian-pizza.jpg" style="width:100%" height="400px" >
+          <div class="caption">Vegeterian Pizza</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="img/meat-deluxe-pizza.jpg" style="width:100%" height="400px" >
+          <div class="caption">Meat Deluxe Pizza</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img src="img/hawaiian-pizza.jpg" style="width:100%" height="400px" >
+          <div class="caption">Hawaiian Pizza</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-    </div> -->
+      <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </div>
 
 
 
@@ -49,6 +89,7 @@
 
 
 
-  <link rel="script" href="js/scripts.js">
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
