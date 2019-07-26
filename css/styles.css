@@ -1,0 +1,22 @@
+body{
+  font-family: 'Rubik', sans-serif;
+}
+.landing-page {
+background-image: url("../img/banner.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.text-center {
+  text-align: center;
+}
+.text-white {
+  color: white;
+}
+.logo {
+  margin-top: 8%;
+}
+h1, h2{
+  font-size: 40px;
+  font-family: 'Permanent Marker', cursive;
+}
