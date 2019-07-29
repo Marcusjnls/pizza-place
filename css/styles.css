@@ -40,7 +40,7 @@ h1, h2{
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: 750px;
+  width: auto;
   margin-top: -22px;
   padding: 16px;
   color: white;
@@ -110,7 +110,7 @@ h1, h2{
 }
 form
 {
-  width:23.75em;
+  width:auto;
   border:1px solid #AAAAAA;
   border-radius:0.625em;
   padding:1.5em 1.5em;
@@ -143,4 +143,16 @@ h4 {
 }
 .text-left{
   text-align: left;
+}
+.footer{
+  text-align: center;
+}
+.md-form{
+  background-image: url("../img/form.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-position: absolute;
+}
+.icons{
+  display:flex;
 }
