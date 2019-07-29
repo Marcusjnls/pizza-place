@@ -38,32 +38,32 @@
     <div class="container-fluid text-center">
       <h2>GALLERY</h2>
       <div class="slideshow-container">
-        <div class="mySlides fadeOutLeft">
+        <div class="mySlides fadeInLeft">
           <div class="numbertext">1 / 6</div>
           <img src="img/cheese-pizza.jpg" style="width:100%" height="400px" >
           <div class="caption">Plain Cheese Pizza</div>
         </div>
-        <div class="mySlides fadeOutLeft">
+        <div class="mySlides fadeInLeft">
           <div class="numbertext">2 / 6</div>
           <img src="img/pepperoni-pizza.jpg" style="width:100%" height="400px" >
           <div class="caption">Pepperoni Pizza</div>
         </div>
-        <div class="mySlides fadeOutLeft">
+        <div class="mySlides fadeInLeft">
           <div class="numbertext">3 / 6</div>
           <img src="img/chicken-pizza.jpg" style="width:100%" height="400px" >
           <div class="caption">Chicken Pizza</div>
         </div>
-        <div class="mySlides fadeOutLeft">
+        <div class="mySlides fadeInLeft">
           <div class="numbertext">4 / 6</div>
           <img src="img/vegeterian-pizza.jpg" style="width:100%" height="400px" >
           <div class="caption">Vegeterian Pizza</div>
         </div>
-        <div class="mySlides fadeOutLeft">
+        <div class="mySlides fadeInLeft">
           <div class="numbertext">5 / 6</div>
           <img src="img/meat-deluxe-pizza.jpg" style="width:100%" height="400px" >
           <div class="caption">Meat Deluxe Pizza</div>
         </div>
-        <div class="mySlides fadeOutLeft">
+        <div class="mySlides fadeInLeft">
           <div class="numbertext">6 / 6</div>
           <img src="img/hawaiian-pizza.jpg" style="width:100%" height="400px" >
           <div class="caption">Hawaiian Pizza</div>
@@ -82,58 +82,114 @@
         </div>
     </div>
     <form>
-      <div class="order-form container text-center">
+      <div class="md-form container-fluid text-center">
         <h2>BUILD YOUR PIZZA</h2>
         <p>As is tradition with the brand, here's your chance to be a pizza guru. Create your bespoke pizza here!</p>
         <div class="card-deck">
           <div class="card">
+            <div class="row">
+             <div class="col-md-6">
+
 
               <h4><strong>Personal Information</strong></h4>
               <div class="text-left">
-                Name:           <input name="name" id="text-box"/><br />
-                Phone No.       <input type="tel" name="phone" id="text-box"/><br />
-                Email Address:  <input type="email" name="email" id="text-box" />
+                Name:           <input name="name" id="name" placeholder="Name..." required><br />
+                Phone No.       <input type="tel" name="phone" id="phone" placeholder="Phone-Number..." required type="number"><br />
+                Email Address:  <input type="email" name="email" id="email" placeholder="E-mail..." required>
               </div>
-            <!-- <fieldset> -->
               <h4><strong>Pizza size</strong></h4>
-              <select name="size" size="3">
-                <option value="1">Small Ksh. 300</option>
-                <option value="2">Medium Ksh. 500</option>
-                <option value="3">Large Ksh. 700</option>
+              <select class="size" size="3">
+                <option value="300">Small Ksh. 300</option>
+                <option value="500">Medium Ksh. 500</option>
+                <option value="700">Large Ksh. 700</option>
               </select>
+            </div>
+            <div class="col-md-6">
               <h4><strong>Crust type</strong></h4>
-              <select name="crust" size="3">
-                <option value="1">Crispy Crust</option>
-                <option value="2">Stuffed Crust</option>
-                <option value="3">Gluten-Free Crust</option>
+              <select class="crust" size="3">
+                <option value="100">Crispy Crust Ksh. 100</option>
+                <option value="150">Stuffed Crust Ksh. 150</option>
+                <option value="200">Gluten-Free Crust Ksh. 200</option>
               </select>
               <h4><strong>Choose Toppings - Ksh. 75 each</strong></h4>
-                <input type="checkbox" name="topping" value="1" class="checkbox"/> Sausage<br />
-                <input type="checkbox" name="topping" value="2" class="checkbox"/> Mushrooms<br />
-                <input type="checkbox" name="topping" value="3" class="checkbox"/> Ham<br />
-                <input type="checkbox" name="topping" value="4" class="checkbox"/> Pepperoni<br />
-                <input type="checkbox" name="topping" value="5" class="checkbox"/> Pineapple<br />
-                <input type="checkbox" name="topping" value="6" class="checkbox"/> Olives<br />
-                <input type="checkbox" name="topping" value="7" class="checkbox"/> Bell Peppers<br />
-                <input type="checkbox" name="topping" value="8" class="checkbox"/> Onions<br />
-                <input type="checkbox" name="topping" value="9" class="checkbox"/> Chicken pieces<br />
-
-            <input type="submit" value="PLACE YOUR ORDER" />
-            <input type="reset" value="START OVER" />
+                <input type="checkbox" name="topping" value="75" class="checkbox"/> Sausage<br />
+                <input type="checkbox" name="topping" value="75" class="checkbox"/> Mushrooms<br />
+                <input type="checkbox" name="topping" value="75" class="checkbox"/> Ham<br />
+                <input type="checkbox" name="topping" value="75" class="checkbox"/> Pepperoni<br />
+                <input type="checkbox" name="topping" value="75" class="checkbox"/> Pineapple<br />
+                <input type="checkbox" name="topping" value="75" class="checkbox"/> Olives<br />
+                <input type="checkbox" name="topping" value="75" class="checkbox"/> Bell Peppers<br />
+                <input type="checkbox" name="topping" value="75" class="checkbox"/> Onions<br />
+                <input type="checkbox" name="topping" value="75" class="checkbox"/> Chicken pieces<br />
+               </div>
+              <input class=" btn placeOrder" type="submit" value="PLACE YOUR ORDER" />
+              <input class=" btn anotherOrder" type="submit" value="PLACE ANOTHER ORDER" />
+              <input class="btn startOver" type="reset" value="START OVER" />
             <br /><br />
+              <div class="content">
+                <p  id="firstOrder">First Order Total: <span></span> </p>
+                <p  id="secondOrder">Next Order Total: <span></span> </p>
+                <p  id="orderTotal">Order Total: <span></span> </p>
+                <p id="grandTotal"><strong>GRAND TOTAL: <span></span></strong> </p>
+              </div>
+              <input class=" btn checkOut" type="submit" value="CHECKOUT"  />
+              <div class="delivery">
+                <p id="deliveryText">
+                  Do you want your pizza delivered at an extra cost of Ksh. 100?
+                </p>
+                <input class=" btn yes" type="submit" value="YES"  />
+                <input class=" btn no" type="submit" value="NO"  />
+              </div>
+              <p id="deliveryAddress">
+                Delivery Address:  <input name="address" id="address" placeholder="Address..." required><br />
+              </p>
+              <input class=" btn confirmDelivery" type="submit" value="CONFIRM ADDRESS" />
           </div>
         </div>
       </div>
+    </div>
     </form>
+    <div class="text-center container">
+        <div class="row">
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-1">
+            <a href="https://twitter.com/?lang=en">
+             <img src="img/social_icons/twitter.png" alt="twitterLogo" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-1">
+            <a href="https://www.pinterest.com/">
+             <img src="img/social_icons/pinterest.png" alt="pinterestLogo" class="img-fluid" >
+            </a>
+          </div>
+          <div class="col-md-1">
+            <a href="https://www.facebook.com/">
+             <img src="img/social_icons/facebook.png" alt="facebookLogo" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-1">
+            <a href="https://aboutme.google.com/u/0/?referer=gplus">
+             <img src="img/social_icons/g_plus.png" alt="google+Logo" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-1">
+            <a href="https://www.youtube.com/">
+             <img src="img/social_icons/you_tube.png" alt="youtubeLogo" class="img-fluid">
+           </a>
+          </div>
+          <div class="col-md-4">
+          </div>
+        </div>
+    </div>
+      <p class="footer"><strong>Eatalian Pizza <br>© 2019</strong> </p>
 
 
 
 
 
 
-
-
-    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
