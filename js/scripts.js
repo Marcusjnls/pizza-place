@@ -74,11 +74,17 @@ $(document).ready(function(){
          let grandTotal= 100 + orderTotal;
          $("#grandTotal").show();
          $('#grandTotal span').html(grandTotal);
+         var clientName= document.getElementById("name");
+         alert("Hey " + clientName + " your order will be delivered in 30minutes");
+
        });
        $(".no").click(function(event) {
           event.preventDefault();
           $("#grandTotal").show();
           $('#grandTotal span').html(orderTotal);
+          var clientName= document.getElementById("name");
+          alert(clientName + "Your order will be ready for pick-up in 15mins");
+
         });
   });
 });
