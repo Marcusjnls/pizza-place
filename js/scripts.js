@@ -75,6 +75,10 @@ $(document).ready(function(){
          $("#grandTotal").show();
          $('#grandTotal span').html(grandTotal);
        });
-
+       $(".no").click(function(event) {
+          event.preventDefault();
+          $("#grandTotal").show();
+          $('#grandTotal span').html(orderTotal);
+        });
   });
 });
