@@ -100,7 +100,7 @@
                 Email Address: <input type="email" name="email" id="email" placeholder="E-mail..." required>
               </div>
               <h4><strong>Pizza size</strong></h4>
-              <select class="size" size="3">
+              <select class="size" size="3" id="size">
                 <option value="300">Small Ksh. 300</option>
                 <option value="500">Medium Ksh. 500</option>
                 <option value="700">Large Ksh. 700</option>
@@ -108,7 +108,7 @@
             </div>
             <div class="col-md-6">
               <h4><strong>Crust type</strong></h4>
-              <select class="crust" size="3">
+              <select class="crust" size="3" id="crust">
                 <option value="100">Crispy Crust Ksh. 100</option>
                 <option value="150">Stuffed Crust Ksh. 150</option>
                 <option value="200">Gluten-Free Crust Ksh. 200</option>
@@ -146,7 +146,13 @@
             </p>
             <input class=" btn confirmDelivery" type="submit" value="CONFIRM ADDRESS" />
             <p id="grandTotal"><strong>GRAND TOTAL: <span></span></strong> </p>
-
+            <div id="show-checkout">
+               <h6>CHECKOUT DETAILS:</h6>
+               <p>Name: <span class="orderName"></span></p>
+               <p>Size: <span class="orderSize"></span></p>
+               <p>Crust: <span class="orderCrust"></span></p>
+               <p>Toppings: <span class="orderToppings"></span></p>
+            </div>
           </div>
         </div>
       </div>
